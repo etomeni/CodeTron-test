@@ -1,0 +1,7 @@
+{
+  "name": "tcaDigitalLibrary",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
