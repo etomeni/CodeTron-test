@@ -2,9 +2,17 @@ import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
   appId: 'io.ionic.starter',
-  appName: 'tcaDigitalLibrary',
+  appName: 'CodeTron',
   webDir: 'www',
-  bundledWebRuntime: false
+  bundledWebRuntime: false,
+
+  plugins: {
+    SplashScreen: {
+      launchAutoHide: false,
+      showSpinner: false,
+    },
+
+  }
 };
 
 export default config;

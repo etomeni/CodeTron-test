@@ -1,27 +1,69 @@
 #container {
-  text-align: center;
+  margin: auto;
+  margin-top: 20px;
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  ion-row ion-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // height: 200px;
+    
+    #main {
+      width: 460px;
+      height: 460px;
+      background-color: rgba(143, 143, 143, 0.082);
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+
+      ion-icon {
+        width: 60px;
+        height: 60px;
+
+        // background-color: bisque;
+        background-color: rgba(0, 0, 0, 0.185);
+        padding: 10px;
+        border-radius: 50%;
+        margin: 10px;
+        color: #de2342c9;
+        // float: right;
+        position: absolute;
+        transform: translate(-115%, -10%);
+      }
+
+      ion-icon:hover {
+        color: #de2341;
+      }
+
+    }
+  }
+
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
+ion-modal {
+  ion-row ion-col {
+    ion-icon {
+      padding: 10px;
+      border-radius: 50%;
+      margin: 10px;
+      color: #fff;
+      font-size: large;
+    }
+    ion-icon.gallery {
+      background-color: rgba(175, 0, 219, 0.705);
+    }
+    ion-icon.camera {
+      background-color: rgba(0, 153, 77, 0.767);
+    }
 
-  color: #8c8c8c;
+    p {
+      padding: 0;
+      margin: 0;
+      // color: #000;
+    }
+  }
 
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
 }
